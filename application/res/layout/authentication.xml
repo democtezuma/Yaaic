@@ -46,10 +46,10 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:enabled="false" />
         <EditText
             android:id="@+id/nickserv_password"
+            android:inputType="textPassword"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"
-            android:password="true" />
+            android:enabled="false" />
         <CheckBox
             android:id="@+id/sasl_checkbox"
             android:layout_width="fill_parent"
@@ -74,10 +74,10 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:enabled="false"/>
         <EditText
             android:id="@+id/sasl_password"
+            android:inputType="textPassword"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"
-            android:password="true" />
+            android:enabled="false"  />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"

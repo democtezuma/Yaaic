@@ -61,13 +61,13 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/port"
+            android:inputType="numberSigned"
             android:contentDescription="@string/server_port"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:minEms="6"
             android:text="6667"
-            android:numeric="integer"
             android:maxLength="5" />
         <TextView
             android:text="@string/server_password"
@@ -75,11 +75,11 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:layout_height="wrap_content" />
         <EditText
             android:id="@+id/password"
+            android:inputType="textPassword"
             android:contentDescription="@string/server_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
-            android:password="true"
             android:minEms="10"
             android:maxEms="10" />
         <CheckBox

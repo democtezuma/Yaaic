@@ -77,7 +77,7 @@
   <string name="only_usable_from_channel">Lietojiet atrododiet kanālā</string>
   <string name="only_usable_from_channel_or_query">Lietojiet atrodoties kanālā vai privātā sarakstē</string>
   <string name="chat_only_form_channel">Vari tērzēt tikai kanālā vai privātā sarakstē</string>
-  <string name="reconnect_after_disconnect">Atvienots no %1$ s. Vai vēlies atkārtoti izveidot savienojumu?</string>
+  <string name="reconnect_after_disconnect">Atvienots no %1$s. Vai vēlies atkārtoti izveidot savienojumu?</string>
   <string name="disconnect_before_editing">Atvienojies no servera, pirms rediģēšanas</string>
   <string name="unknown_command">Nezināma darbība: %1$s</string>
   <string name="command_syntax">Sintakse: %1$s</string>
