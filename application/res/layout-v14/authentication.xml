@@ -63,6 +63,7 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:enabled="false" />
         <EditText
             android:id="@+id/sasl_username"
+            android:inputType="text"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:enabled="false" />
