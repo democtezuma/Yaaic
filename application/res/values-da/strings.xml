@@ -52,9 +52,6 @@
   <string name="charset">Tegnsæt</string>
   <string name="action_remove">Fjern</string>
   <string name="action_add">Tilføj</string>
-  <string name="action_ok">Ok</string>
-  <string name="action_cancel">Annuller</string>
-  <string name="negative_button">Nej</string>
   <string name="alias_add_description">Disse aliaser vil blive brugt hvis det valge kaldenavn ikke er tilgængeligt.</string>
   <string name="channel_add_description">Disse kanaler vil blive åbnet når forbindelsen er oprettet.</string>
   <string name="command_add_description">Disse kommandoer vil bliver udført når forbindelsen er oprettet.</string>

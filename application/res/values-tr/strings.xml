@@ -52,9 +52,6 @@
   <string name="charset">Karakter kümesi</string>
   <string name="action_remove">Kaldır</string>
   <string name="action_add">Ekle</string>
-  <string name="action_ok">Tamam</string>
-  <string name="action_cancel">İptal</string>
-  <string name="negative_button">Hayır</string>
   <string name="alias_add_description">Rumuza ulaşılamıyor ise bu takma ad kullanılır.</string>
   <string name="channel_add_description">Bağlantıdan sonra bu kanallara otomatik katılacak.</string>
   <string name="command_add_description">Bu komutlar bağlantı gerçekleştikten sonra kullanılacak.</string>

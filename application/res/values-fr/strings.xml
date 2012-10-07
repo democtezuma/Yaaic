@@ -52,9 +52,6 @@
   <string name="charset">Encodage</string>
   <string name="action_remove">Supprimer</string>
   <string name="action_add">Ajouter</string>
-  <string name="action_ok">Ok</string>
-  <string name="action_cancel">Annuler</string>
-  <string name="negative_button">Non</string>
   <string name="alias_add_description">Ces aliases seront utilisées si le pseudo principal n\'est pas disponible.</string>
   <string name="channel_add_description">Ces canaux seront rejoints automatiquement après la connexion.</string>
   <string name="command_add_description">Ces commandes seront exécutées après la connexion.</string>

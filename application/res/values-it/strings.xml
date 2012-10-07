@@ -52,9 +52,6 @@
   <string name="charset">Charset</string>
   <string name="action_remove">Rimuovi</string>
   <string name="action_add">Aggiungi</string>
-  <string name="action_ok">Ok</string>
-  <string name="action_cancel">Cancella</string>
-  <string name="negative_button">No</string>
   <string name="alias_add_description">Questi alias saranno usati se il nickname principale non e\' disponibile.</string>
   <string name="channel_add_description">Dopo la connessione entrerai automaticamente in questi canali.</string>
   <string name="command_add_description">Dopo la connessione saranno eseguiti questi comandi.</string>

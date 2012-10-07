@@ -52,9 +52,6 @@
   <string name="charset">Кодировка</string>
   <string name="action_remove">Удалить</string>
   <string name="action_add">Добавить</string>
-  <string name="action_ok">ОК</string>
-  <string name="action_cancel">Отмена</string>
-  <string name="negative_button">Нет</string>
   <string name="alias_add_description">Эти ники будут использованы, если основной недоступен.</string>
   <string name="channel_add_description">Каналы для захода автоматически после подключения.</string>
   <string name="command_add_description">Эти команды будут выполнены после подключения.</string>

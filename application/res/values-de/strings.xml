@@ -52,9 +52,6 @@
   <string name="charset">Zeichensatz</string>
   <string name="action_remove">Entfernen</string>
   <string name="action_add">Hinzufügen</string>
-  <string name="action_ok">Ok</string>
-  <string name="action_cancel">Abbrechen</string>
-  <string name="negative_button">Nein</string>
   <string name="alias_add_description">Alternativer Benutzername falls der bevorzugte bereits in Benutzung ist.</string>
   <string name="channel_add_description">Diese Kanäle werden automatisch nach Verbindung bertreten.</string>
   <string name="command_add_description">Diese Befehle werden automatisch nach Verbindung ausgeführt.</string>

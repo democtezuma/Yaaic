@@ -60,13 +60,13 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/cancel"
-            android:text="@string/action_cancel"
+            android:text="@android:string/cancel"
             android:minWidth="90dp" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ok"
-            android:text="@string/action_ok"
+            android:text="@android:string/ok"
             android:minWidth="90dp" />
     </LinearLayout>
 </LinearLayout>

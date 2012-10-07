@@ -52,9 +52,6 @@
   <string name="charset">字符编码</string>
   <string name="action_remove">删除</string>
   <string name="action_add">增加</string>
-  <string name="action_ok">确认</string>
-  <string name="action_cancel">取消</string>
-  <string name="negative_button">不用</string>
   <string name="alias_add_description">若主昵称不可用，将使用这些别名。</string>
   <string name="channel_add_description">连接后自动加入这些频道。</string>
   <string name="command_add_description">连接后自动执行这些指令。</string>

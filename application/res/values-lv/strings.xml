@@ -52,9 +52,6 @@
   <string name="charset">Rakstzīmju kods</string>
   <string name="action_remove">Dzēst</string>
   <string name="action_add">Pievienot</string>
-  <string name="action_ok">Ok</string>
-  <string name="action_cancel">Atcelt</string>
-  <string name="negative_button">Nē</string>
   <string name="alias_add_description">Šie aliasi tiks lietoti, ja galvenais niks nav pieejams.</string>
   <string name="channel_add_description">Šiem kanāliem pievienosies automātiski.</string>
   <string name="command_add_description">Šīs komandas tiek izpildīts pēc savienojuma.</string>

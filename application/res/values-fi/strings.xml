@@ -52,9 +52,6 @@
   <string name="charset">Charset</string>
   <string name="action_remove">Poista</string>
   <string name="action_add">Lisää</string>
-  <string name="action_ok">OK</string>
-  <string name="action_cancel">Peruuta</string>
-  <string name="negative_button">Ei</string>
   <string name="alias_add_description">These aliases will be used if the main nickname is unavailable.</string>
   <string name="channel_add_description">These channels will be automatically joined after connect.</string>
   <string name="command_add_description">These commands will be executed after connect.</string>

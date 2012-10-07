@@ -49,9 +49,6 @@
 
     <string name="action_remove">Remove</string>
     <string name="action_add">Add</string>
-    <string name="action_ok">Ok</string>
-    <string name="action_cancel">Cancel</string>
-    <string name="negative_button">No</string>
 
     <string name="alias_add_description">These aliases will be used if the main nickname is unavailable.</string>
     <string name="channel_add_description">These channels will be automatically joined after connect.</string>

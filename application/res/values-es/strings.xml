@@ -52,9 +52,6 @@
   <string name="charset">Juego de caracteres</string>
   <string name="action_remove">Quitar</string>
   <string name="action_add">Añadir</string>
-  <string name="action_ok">Ok</string>
-  <string name="action_cancel">Cancelar</string>
-  <string name="negative_button">No</string>
   <string name="alias_add_description">Estos alias si el apodo principal no esta disponible.</string>
   <string name="channel_add_description">Estos canales serán abiertos automáticamente despues de conectar.</string>
   <string name="command_add_description">Estos comandose serán ejecutados despues de conectar.</string>

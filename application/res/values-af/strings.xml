@@ -52,9 +52,6 @@
   <string name="charset">Charset</string>
   <string name="action_remove">Verwyder</string>
   <string name="action_add">Voeg By</string>
-  <string name="action_ok">Ok</string>
-  <string name="action_cancel">Kanselleer</string>
-  <string name="negative_button">Nee</string>
   <string name="alias_add_description">Hierdie aliasse sal gebruik word wanneer die hoof noemnaam is nie beskikbaar is nie.</string>
   <string name="channel_add_description">These channels will be automatically joined after connect.</string>
   <string name="command_add_description">These commands will be executed after connect.</string>

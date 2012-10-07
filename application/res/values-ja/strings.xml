@@ -52,9 +52,6 @@
   <string name="charset">文字コード</string>
   <string name="action_remove">削除</string>
   <string name="action_add">追加</string>
-  <string name="action_ok">Ok</string>
-  <string name="action_cancel">キャンセル</string>
-  <string name="negative_button">いいえ</string>
   <string name="alias_add_description">These aliases will be used if the main nickname is unavailable.</string>
   <string name="channel_add_description">These channels will be automatically joined after connect.</string>
   <string name="command_add_description">These commands will be executed after connect.</string>
