@@ -619,7 +619,7 @@ public class ConversationActivity extends SherlockActivity implements ServiceCon
                         reconnectDialogActive = false;
                     }
                 })
-                .setNegativeButton(getString(R.string.negative_button), new DialogInterface.OnClickListener() {
+                .setNegativeButton(getString(android.R.string.no), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         server.setMayReconnect(false);
