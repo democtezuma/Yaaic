@@ -68,7 +68,7 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:minEms="6"
-            android:text="6667"
+            android:text="@string/port_default"
             android:maxLength="5" />
         <TextView
             android:text="@string/server_password"
@@ -128,7 +128,7 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:inputType="text"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="yaaic"
+            android:text="@string/ident_default"
             android:contentDescription="@string/ident"
             android:singleLine="true" />
         <TextView

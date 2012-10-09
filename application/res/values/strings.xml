@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="hashtag">#</string>
+    <string name="hashtag_channel">#channel</string>
+    <string name="command_symbol">/</string>
+    <string name="command_template">/command</string>
+    <string name="pocmo_helloworld">&lt;pocmo&gt; Hello World!</string>
+    <string name="port_default">6667</string>
+    <string name="ident_default">yaaic</string>
+    <string name="host_default">irc.example.com</string>
+    <string name="pocmo">pocmo</string>
+
     <string name="add_server_menu">Add server</string>
     <string name="add_server_list">Add server</string>
 
@@ -25,6 +35,7 @@
     <string name="server_save">Save</string>
     <string name="select_charset">Select a charset</string>
     <string name="nickname">Nickname</string>
+    <string name="alias">Alias</string>
     <string name="aliases">Aliases</string>
     <string name="ident">Ident</string>
     <string name="realname">Real Name</string>

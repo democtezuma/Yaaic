@@ -32,7 +32,7 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
         android:layout_height="wrap_content"
         android:singleLine="true"
         android:ems="10"
-        android:text="#" />
+        android:text="@string/hashtag" />
     <Button
         android:id="@+id/join"
         android:layout_width="fill_parent"

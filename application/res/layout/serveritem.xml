@@ -39,13 +39,13 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
             android:id="@+id/title"
             android:layout_width="fill_parent" 
             android:layout_height="wrap_content"
-            android:text="Server"
+            android:text="@string/server"
             android:textSize="18sp" />
         <TextView
            android:id="@+id/host"
            android:layout_width="fill_parent"
            android:layout_height="wrap_content"
-           android:text="irc.example.com"
+           android:text="@string/host_default"
            android:textSize="12sp" />
     </LinearLayout>
 </LinearLayout>
