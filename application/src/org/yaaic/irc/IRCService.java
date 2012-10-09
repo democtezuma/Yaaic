@@ -24,7 +24,6 @@ package org.yaaic.irc;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 import org.jibble.pircbot.IrcException;
@@ -50,6 +49,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.SystemClock;
+import android.util.SparseArray;
 
 /**
  * The background service for managing the irc connections
@@ -59,7 +59,7 @@ import android.os.SystemClock;
 public class IRCService extends Service
 {
     private final IRCBinder binder;
-    private final HashMap<Integer, IRCConnection> connections;
+    private final SparseArray<IRCConnection> connections;
     private boolean foreground = false;
     private final ArrayList<String> connectedServerTitles;
     private final LinkedHashMap<String, Conversation> mentions;
@@ -88,8 +88,8 @@ public class IRCService extends Service
     private Notification notification;
     private Settings settings;
 
-    private HashMap<Integer, PendingIntent> alarmIntents;
-    private HashMap<Integer, ReconnectReceiver> alarmReceivers;
+    private SparseArray<PendingIntent> alarmIntents;
+    private SparseArray<ReconnectReceiver> alarmReceivers;
     private final Object alarmIntentsLock;
 
     /**
@@ -99,12 +99,12 @@ public class IRCService extends Service
     {
         super();
 
-        this.connections = new HashMap<Integer, IRCConnection>();
+        this.connections = new SparseArray<IRCConnection>();
         this.binder = new IRCBinder(this);
         this.connectedServerTitles = new ArrayList<String>();
         this.mentions = new LinkedHashMap<String, Conversation>();
-        this.alarmIntents = new HashMap<Integer, PendingIntent>();
-        this.alarmReceivers = new HashMap<Integer, ReconnectReceiver>();
+        this.alarmIntents = new SparseArray<PendingIntent>();
+        this.alarmReceivers = new SparseArray<ReconnectReceiver>();
         this.alarmIntentsLock = new Object();
     }
 
@@ -440,7 +440,8 @@ public class IRCService extends Service
             public void run() {
                 synchronized(alarmIntentsLock) {
                     alarmIntents.remove(serverId);
-                    ReconnectReceiver lastReceiver = alarmReceivers.remove(serverId);
+                    ReconnectReceiver lastReceiver = alarmReceivers.get(serverId);
+                    alarmReceivers.remove(serverId);
                     if (lastReceiver != null) {
                         unregisterReceiver(lastReceiver);
                     }
@@ -548,7 +549,7 @@ public class IRCService extends Service
      */
     public boolean hasConnection(int serverId)
     {
-        return connections.containsKey(serverId);
+        return connections.indexOfKey(serverId) != -1;
     }
 
     /**
@@ -612,11 +613,11 @@ public class IRCService extends Service
 
         AlarmManager am = (AlarmManager) getSystemService(ALARM_SERVICE);
         synchronized(alarmIntentsLock) {
-            for (PendingIntent pendingRIntent : alarmIntents.values()) {
-                am.cancel(pendingRIntent);
+            for (int i = 0; i < alarmIntents.size(); i++) {
+                am.cancel(alarmIntents.valueAt(i));
             }
-            for (ReconnectReceiver receiver : alarmReceivers.values()) {
-                unregisterReceiver(receiver);
+            for (int i = 0; i < alarmReceivers.size(); i++) {
+                unregisterReceiver(alarmReceivers.valueAt(i));
             }
             alarmIntents.clear();
             alarmIntents = null;

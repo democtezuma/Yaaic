@@ -21,7 +21,6 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
 package org.yaaic.db;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import org.yaaic.model.Authentication;
@@ -35,6 +34,7 @@ import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.SparseArray;
 
 /**
  * Database Helper for the servers and channels tables
@@ -333,9 +333,9 @@ public class Database extends SQLiteOpenHelper
      * 
      * @return
      */
-    public HashMap<Integer, Server> getServers()
+    public SparseArray<Server> getServers()
     {
-        HashMap<Integer, Server> servers = new HashMap<Integer, Server>();
+        SparseArray<Server> servers = new SparseArray<Server>();
 
         Cursor cursor = this.getReadableDatabase().query(
             ServerConstants.TABLE_NAME,

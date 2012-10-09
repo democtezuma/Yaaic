@@ -20,7 +20,6 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
 */
 package org.yaaic.adapter;
 
-import java.util.HashMap;
 import java.util.LinkedList;
 
 import org.yaaic.indicator.ConversationStateProvider;
@@ -32,6 +31,7 @@ import org.yaaic.view.MessageListView;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.SparseArray;
 import android.view.View;
 
 import com.viewpagerindicator.TitlePageIndicator;
@@ -50,7 +50,7 @@ public class ConversationPagerAdapter extends PagerAdapter implements Conversati
 
     private final Server server;
     private LinkedList<ConversationInfo> conversations;
-    private final HashMap<Integer, View> views;
+    private final SparseArray<View> views;
 
     /**
      * Container class to remember conversation and view association.
@@ -74,7 +74,7 @@ public class ConversationPagerAdapter extends PagerAdapter implements Conversati
         this.server = server;
 
         conversations = new LinkedList<ConversationInfo>();
-        views = new HashMap<Integer, View>();
+        views = new SparseArray<View>();
     }
 
     /**
@@ -105,7 +105,7 @@ public class ConversationPagerAdapter extends PagerAdapter implements Conversati
     @Override
     public int getItemPosition(Object object)
     {
-        if (views.containsKey(object)) {
+        if (views.indexOfValue((View) object) != -1) {
             return POSITION_UNCHANGED;
         }
 

@@ -21,13 +21,13 @@ along with Yaaic.  If not, see <http://www.gnu.org/licenses/>.
 package org.yaaic;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Set;
 
 import org.yaaic.db.Database;
 import org.yaaic.model.Server;
 
 import android.content.Context;
+import android.util.SparseArray;
 
 /**
  * Global Master Class :)
@@ -38,7 +38,7 @@ public class Yaaic
 {
     public static Yaaic              instance;
 
-    private HashMap<Integer, Server> servers;
+    private SparseArray<Server>      servers;
     private boolean                  serversLoaded = false;
 
     /**
@@ -46,7 +46,7 @@ public class Yaaic
      */
     private Yaaic()
     {
-        servers = new HashMap<Integer, Server>();
+        servers = new SparseArray<Server>();
     }
 
     /**
@@ -105,7 +105,7 @@ public class Yaaic
      * 
      * @param servers
      */
-    public void setServers(HashMap<Integer, Server> servers)
+    public void setServers(SparseArray<Server> servers)
     {
         this.servers = servers;
     }
@@ -115,7 +115,7 @@ public class Yaaic
      */
     public void addServer(Server server)
     {
-        if (!servers.containsKey(server.getId())) {
+        if (servers.indexOfKey(server.getId()) == -1) {
             servers.put(server.getId(), server);
         }
     }
@@ -137,9 +137,8 @@ public class Yaaic
     {
         ArrayList<Server> serverList = new ArrayList<Server>();
 
-        Set<Integer> mKeys = servers.keySet();
-        for (int key : mKeys) {
-            serverList.add(servers.get(key));
+        for (int i = 0; i < servers.size(); i++) {
+            serverList.add(servers.valueAt(i));
         }
 
         return serverList;
